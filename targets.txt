@@ -1,0 +1,10 @@
+# Add one target per line
+# Supported:
+# - Domain: example.com
+# - IP: 1.1.1.1
+# - CIDR: 127.0.0.1/24
+
+# examples:
+# nextjs.org
+# 104.17.134.117
+# 127.0.0.1/24

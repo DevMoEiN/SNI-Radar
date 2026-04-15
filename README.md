@@ -70,7 +70,7 @@ pip install flask
 ## ▶️ Run | اجرا
 
 ```bash
-python app.py
+python sni_web.py
 ```
 
 سپس باز کن:

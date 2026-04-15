@@ -33,5 +33,5 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/SNI-Radar.git](https://github.com/YOUR_USERNAME/SNI-Radar.git)
+   git clone [https://github.com/DevMoEiN/SNI-Radar.git](https://github.com/DevMoEiN/SNI-Radar.git)
    cd SNI-Radar

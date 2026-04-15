@@ -35,3 +35,56 @@
    ```bash
    git clone [https://github.com/DevMoEiN/SNI-Radar.git](https://github.com/DevMoEiN/SNI-Radar.git)
    cd SNI-Radar
+
+    Install dependencies:
+    Bash
+
+    pip install flask
+
+    Run the application:
+    Bash
+
+    python main.py
+
+    The Web UI will automatically open in your default browser at http://127.0.0.1:10808.
+
+📁 Custom Targets
+
+Load default targets by creating a targets.txt file in the root directory. Add one IP, Domain, or CIDR per line.
+🇮🇷 راهنمای فارسی
+✨ امکانات
+
+    🎯 اسکن هوشمند: بررسی هم‌زمان پینگ، TCP، SNI و تشخیص سرویس‌دهنده‌های CDN (کلودفلر، ورسل، آمازون و غیره).
+
+    ⚡ سرعت بالا: استفاده از پردازش چندنخی (Multi-threading) برای اسکن فوق‌سریع.
+
+    🎨 رابط کاربری مدرن: طراحی بسیار زیبای Dark Glassmorphism (شیشه‌ای تاریک) با پس‌زمینه متحرک و واکنش‌گرا.
+
+    📡 پخش زنده (Live Stream): نمایش نتایج در لحظه روی مرورگر با استفاده از NDJSON.
+
+    📊 مرتب‌سازی زنده: چیدمان خودکار نتایج بر اساس کیفیت و در دسترس بودن شبکه (اولویت با اتصال TCP و Ping).
+
+    🛑 کنترل کامل: قابلیت تنظیم سرعت اسکن (تعداد تردها)، سقف هاست‌های CIDR و دکمه توقف فوری اسکن.
+
+    🌐 پشتیبانی از اهداف مختلف: امکان اسکن IP، دامنه (رنج‌ها) و ساب‌نت‌های CIDR (مثلاً 127.0.0.1/30).
+
+🚀 آموزش نصب و استفاده
+
+۱. دریافت سورس‌کد:
+Bash
+
+git clone [https://github.com/DevMoEiN/SNI-Radar.git](https://github.com/DevMoEiN/SNI-Radar.git)
+cd SNI-Radar
+
+۲. نصب پیش‌نیازها:
+این ابزار به فریم‌ورک Flask نیاز دارد:
+Bash
+
+pip install flask
+
+۳. اجرای برنامه:
+Bash
+
+python main.py
+
+پس از اجرا، رابط کاربری وب به‌صورت خودکار در آدرس http://127.0.0.1:10808 مرورگر شما باز می‌شود.

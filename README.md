@@ -1,20 +1,26 @@
 <h1 align="center">📡 SNI Radar</h1>
 
 <p align="center">
-  <strong>An intelligent, high-speed SNI & CDN scanner featuring an advanced Dark Glassmorphism Web UI.</strong>
+  <strong>An intelligent, high-speed SNI & CDN scanner featuring an advanced Dark Glassmorphism Web UI.</strong><br>
+  <strong>اسکنر هوشمند و پرسرعت SNI و CDN با رابط کاربری وب مدرن (Glassmorphism)</strong>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python Version">
   <img src="https://img.shields.io/badge/Framework-Flask-black.svg" alt="Flask">
   <img src="https://img.shields.io/badge/UI-Glassmorphism-purple.svg" alt="UI Design">
-  <img src="https://img.shields.io/badge/Threads-Concurrent-green.svg" alt="Concurrency">
+</p>
+
+<p align="center">
+  👨‍💻 <b>Author (نویسنده):</b> <a href="https://t.me/itsthemoein">@itsthemoein</a> <br>
+  📢 <b>Telegram Channel (کانال تلگرام):</b> <a href="https://t.me/PersiaTmChannel">@PersiaTmChannel</a>
 </p>
 
 ---
 
-## ✨ Features
+## 🇺🇸 English
 
+### ✨ Features
 - **🎯 Intelligent Scanning:** Simultaneously checks Ping, TCP, SNI, and identifies CDN providers (Cloudflare, Vercel, Fastly, AWS, GCP, etc.).
 - **⚡ High-Speed Concurrency:** Utilizes Python's `ThreadPoolExecutor` for blazing-fast multi-threaded scanning.
 - **🎨 Modern Web UI:** Beautiful Dark Glassmorphism design with animated backgrounds and responsive layout.
@@ -23,7 +29,7 @@
 - **🛑 Total Control:** Fully adjustable thread speed, max CIDR host limits, and an instant "Stop" button.
 - **🌐 Target Support:** Seamlessly handles individual IPs, Domains, and full CIDR subnets (e.g., `127.0.0.1/30`).
 
-## 🚀 Installation & Usage
+### 🚀 Installation & Usage
 
 1. **Clone the repository:**
    ```bash

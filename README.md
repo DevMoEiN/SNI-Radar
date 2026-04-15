@@ -1,90 +1,192 @@
-<h1 align="center">📡 SNI Radar</h1>
+# 🚀 SNI Radar
 
-<p align="center">
-  <strong>An intelligent, high-speed SNI & CDN scanner featuring an advanced Dark Glassmorphism Web UI.</strong><br>
-  <strong>اسکنر هوشمند و پرسرعت SNI و CDN با رابط کاربری وب مدرن (Glassmorphism)</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/Framework-Flask-black.svg" alt="Flask">
-  <img src="https://img.shields.io/badge/UI-Glassmorphism-purple.svg" alt="UI Design">
-</p>
-
-<p align="center">
-  👨‍💻 <b>Author (نویسنده):</b> <a href="https://t.me/itsthemoein">@itsthemoein</a> <br>
-  📢 <b>Telegram Channel (کانال تلگرام):</b> <a href="https://t.me/PersiaTmChannel">@PersiaTmChannel</a>
-</p>
+> 🔍 Intelligent SNI / TCP / Ping / CDN Scanner with Live Streaming UI
+> 🔍 اسکنر هوشمند SNI / TCP / پینگ / CDN با رابط گرافیکی زنده
 
 ---
 
-## 🇺🇸 English
+## ✨ Features | ویژگی‌ها
 
-### ✨ Features
-- **🎯 Intelligent Scanning:** Simultaneously checks Ping, TCP, SNI, and identifies CDN providers (Cloudflare, Vercel, Fastly, AWS, GCP, etc.).
-- **⚡ High-Speed Concurrency:** Utilizes Python's `ThreadPoolExecutor` for blazing-fast multi-threaded scanning.
-- **🎨 Modern Web UI:** Beautiful Dark Glassmorphism design with animated backgrounds and responsive layout.
-- **📡 Live Streaming:** Real-time results streamed directly to the UI using NDJSON.
-- **📊 Live Sorting:** Automatically sorts scan results based on network quality (Ping + TCP priority).
-- **🛑 Total Control:** Fully adjustable thread speed, max CIDR host limits, and an instant "Stop" button.
-- **🌐 Target Support:** Seamlessly handles individual IPs, Domains, and full CIDR subnets (e.g., `127.0.0.1/30`).
+* ⚡ Live Streaming Results (NDJSON)
+  ⚡ نمایش نتایج به‌صورت زنده
 
-### 🚀 Installation & Usage
+* 🧠 Smart SNI Detection
+  🧠 تشخیص هوشمند SNI
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/DevMoEiN/SNI-Radar.git](https://github.com/DevMoEiN/SNI-Radar.git)
-   cd SNI-Radar
+* 🌐 CDN Provider Identification
+  🌐 شناسایی ارائه‌دهنده CDN
 
-    Install dependencies:
-    Bash
+* 📡 Ping + TCP Health Checks
+  📡 بررسی پینگ و اتصال TCP
 
-    pip install flask
+* 🧵 Multi-threaded Scanning (1–100 threads)
+  🧵 اسکن چند نخی (۱ تا ۱۰۰ ترد)
 
-    Run the application:
-    Bash
+* 🛑 Real-time Stop Control
+  🛑 توقف آنی اسکن
 
-    python main.py
+* 🎯 CIDR Expansion Support
+  🎯 پشتیبانی از CIDR
 
-    The Web UI will automatically open in your default browser at http://127.0.0.1:10808.
+* 🎨 Modern Glassmorphism UI
+  🎨 رابط کاربری مدرن گلس
 
-📁 Custom Targets
+* 📊 Live Metrics Dashboard
+  📊 داشبورد آمار لحظه‌ای
 
-Load default targets by creating a targets.txt file in the root directory. Add one IP, Domain, or CIDR per line.
-🇮🇷 راهنمای فارسی
-✨ امکانات
+* 💾 Auto-save JSON Results
+  💾 ذخیره خودکار نتایج
 
-    🎯 اسکن هوشمند: بررسی هم‌زمان پینگ، TCP، SNI و تشخیص سرویس‌دهنده‌های CDN (کلودفلر، ورسل، آمازون و غیره).
+---
 
-    ⚡ سرعت بالا: استفاده از پردازش چندنخی (Multi-threading) برای اسکن فوق‌سریع.
+## 🧠 What is this? | این ابزار چیه؟
 
-    🎨 رابط کاربری مدرن: طراحی بسیار زیبای Dark Glassmorphism (شیشه‌ای تاریک) با پس‌زمینه متحرک و واکنش‌گرا.
+**SNI Radar** یک ابزار قدرتمند برای تحلیل شبکه است که موارد زیر را بررسی می‌کند:
 
-    📡 پخش زنده (Live Stream): نمایش نتایج در لحظه روی مرورگر با استفاده از NDJSON.
+* Domain / IP / CIDR
+* TLS SNI usability
+* CDN detection
+* Network reachability
 
-    📊 مرتب‌سازی زنده: چیدمان خودکار نتایج بر اساس کیفیت و در دسترس بودن شبکه (اولویت با اتصال TCP و Ping).
+📌 مناسب برای:
 
-    🛑 کنترل کامل: قابلیت تنظیم سرعت اسکن (تعداد تردها)، سقف هاست‌های CIDR و دکمه توقف فوری اسکن.
+* تست بای‌پس
+* تحلیل CDN
+* دیباگ شبکه
+* تحقیقات امنیتی
 
-    🌐 پشتیبانی از اهداف مختلف: امکان اسکن IP، دامنه (رنج‌ها) و ساب‌نت‌های CIDR (مثلاً 127.0.0.1/30).
+---
 
-🚀 آموزش نصب و استفاده
+## ⚙️ Installation | نصب
 
-۱. دریافت سورس‌کد:
-Bash
-
-git clone [https://github.com/DevMoEiN/SNI-Radar.git](https://github.com/DevMoEiN/SNI-Radar.git)
+```bash
+git clone https://github.com/DevMoEiN/SNI-Radar.git
 cd SNI-Radar
-
-۲. نصب پیش‌نیازها:
-این ابزار به فریم‌ورک Flask نیاز دارد:
-Bash
-
 pip install flask
+```
 
-۳. اجرای برنامه:
-Bash
+---
 
-python main.py
+## ▶️ Run | اجرا
 
-پس از اجرا، رابط کاربری وب به‌صورت خودکار در آدرس http://127.0.0.1:10808 مرورگر شما باز می‌شود.
+```bash
+python app.py
+```
+
+سپس باز کن:
+
+```
+http://127.0.0.1:10808
+```
+
+---
+
+## 📥 Input Examples | مثال ورودی
+
+```
+cloudflare.com
+1.1.1.1
+8.8.8.8
+127.0.0.1/30
+```
+
+---
+
+## 📊 Output | خروجی
+
+| Target      | IP        | Ping | TCP | SNI | CDN        | Status     |
+| ----------- | --------- | ---- | --- | --- | ---------- | ---------- |
+| example.com | 104.x.x.x | 32ms | ✅   | ✅   | Cloudflare | SNI-USABLE |
+
+---
+
+## 🧩 How It Works | نحوه کار
+
+1. Resolve domain → IP
+2. Ping test
+3. TCP connection
+4. TLS (SNI) handshake
+5. CDN detection
+6. Final scoring
+
+---
+
+## 📁 Output Files | فایل خروجی
+
+بعد از هر اسکن:
+
+```
+sni_results_YYYYMMDD_HHMMSS.json
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* Python 🐍
+* Flask 🌐
+* ThreadPoolExecutor ⚡
+* Vanilla JS 🎨
+
+---
+
+## 📡 API
+
+### `POST /api/scan`
+
+```json
+{
+  "targets": ["example.com"],
+  "strict_ping": true,
+  "max_hosts": 4096,
+  "threads": 10
+}
+```
+
+### `POST /api/stop`
+
+Stop current scan
+توقف اسکن
+
+---
+
+## ⚠️ Disclaimer | هشدار
+
+This project is for **educational purposes only**.
+از این ابزار فقط برای اهداف آموزشی استفاده کنید.
+
+---
+
+## 👤 Author | سازنده
+
+* Telegram: **@itsthemoein**
+
+---
+
+## 📢 Channel | کانال
+
+* Telegram: **@persiatmchannel**
+
+---
+
+## ⭐ Support
+
+اگر خوشت اومد:
+
+* ⭐ Star کن
+* 🍴 Fork کن
+* 💡 ایده بده
+
+---
+
+## 🔥 Future Plans
+
+* GeoIP 🌍
+* CSV / HTML export 📄
+* WebSocket mode ⚡
+* Docker 🐳
+* Themes 🎨
+
+---
+
+> Made with ❤️ by Moein

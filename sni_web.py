@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """SNI Web UI with Advanced Dark Glassmorphism Design, Live Streaming, Concurrency, Live Sorting & TXT Export."""
 
@@ -66,9 +66,6 @@ HTML_TEMPLATE = """
             --faint: rgba(255,255,255,0.04);
         }
 
-        html { font-size: 16px; }
-        @media (min-width: 768px) { html { font-size: 17px; } }
-        @media (min-width: 1280px) { html { font-size: 18px; } }
         html, body { min-height: 100vh; background: var(--bg); color: var(--text); font-family: "AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; }
 
         /* ─── ANIMATED BACKGROUND ─────────────────────── */
@@ -134,7 +131,7 @@ HTML_TEMPLATE = """
         }
 
         .brand-sub {
-            font-family: "AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif;
+            font-family: "Cascadia Mono", "Consolas", "Courier New", monospace;
             font-size: 0.62rem; color: var(--muted); letter-spacing: .25em; text-transform: uppercase; margin-top: 1px;
         }
 
@@ -188,7 +185,7 @@ HTML_TEMPLATE = """
         .hero-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
 
         .tag {
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.62rem; letter-spacing:.1em; text-transform:uppercase;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.62rem; letter-spacing:.1em; text-transform:uppercase;
             padding:3px 9px; border-radius:6px;
             background:rgba(255,255,255,.05); border:1px solid var(--border); color:#94a3b8;
         }
@@ -200,7 +197,7 @@ HTML_TEMPLATE = """
 
         .hero-desc {
             font-size:.9rem; color:#94a3b8; line-height:1.7;
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.75rem;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.75rem;
         }
 
         /* ─── CHANNEL CARD ────────────────────────────── */
@@ -222,7 +219,7 @@ HTML_TEMPLATE = """
         }
 
         .tg-name { font-size:.9rem; font-weight:700; color:#fff; }
-        .tg-handle { font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.68rem; color:var(--muted); margin-top:2px; }
+        .tg-handle { font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.68rem; color:var(--muted); margin-top:2px; }
 
         .tg-desc { font-size:.78rem; color:#94a3b8; line-height:1.6; margin-bottom:16px; }
 
@@ -258,7 +255,7 @@ HTML_TEMPLATE = """
 
         label.field-label {
             display:flex; justify-content:space-between; align-items:center;
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace;
             font-size:.62rem; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; margin-bottom:7px;
         }
         .val-badge { color:var(--c); font-weight:bold; }
@@ -266,7 +263,7 @@ HTML_TEMPLATE = """
         .glass-input {
             width:100%; padding:10px 14px;
             background:rgba(0,0,0,.28); border:1px solid var(--border);
-            border-radius:12px; color:#f8fafc; font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.78rem; line-height:1.6;
+            border-radius:12px; color:#f8fafc; font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.78rem; line-height:1.6;
             transition:border-color .25s, box-shadow .25s;
             box-shadow: inset 0 2px 4px rgba(0,0,0,.25);
             resize: vertical;
@@ -327,7 +324,7 @@ HTML_TEMPLATE = """
         .scan-btn {
             flex: 1; padding:13px 20px; border-radius:14px; border:none; cursor:pointer;
             background: linear-gradient(135deg, #4facfe 0%, #00e5ff 100%);
-            color:#0f172a; font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-weight:800; font-size:.9rem; letter-spacing:.02em;
+            color:#0f172a; font-family:"Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-weight:800; font-size:.9rem; letter-spacing:.02em;
             display:flex; align-items:center; justify-content:center; gap:8px;
             position:relative; overflow:hidden; transition:all .3s cubic-bezier(.4,0,.2,1);
             box-shadow: 0 4px 16px rgba(0,229,255,.35);
@@ -347,7 +344,7 @@ HTML_TEMPLATE = """
         .stop-btn {
             flex: 1; padding:13px 20px; border-radius:14px; border:none; cursor:pointer;
             background: linear-gradient(135deg, #f43f5e 0%, #ef4444 100%);
-            color:#fff; font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-weight:800; font-size:.9rem; letter-spacing:.02em;
+            color:#fff; font-family:"Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-weight:800; font-size:.9rem; letter-spacing:.02em;
             display:flex; align-items:center; justify-content:center; gap:8px;
             position:relative; overflow:hidden; transition:all .3s cubic-bezier(.4,0,.2,1);
             box-shadow: 0 4px 16px rgba(239,68,68,.35);
@@ -357,7 +354,7 @@ HTML_TEMPLATE = """
         .export-btn {
             padding:6px 12px; border-radius:8px; border:1px solid rgba(16,185,129,0.3); cursor:pointer;
             background: rgba(16,185,129,0.1);
-            color:#34d399; font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-weight:600; font-size:.75rem; letter-spacing:.02em;
+            color:#34d399; font-family:"Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-weight:600; font-size:.75rem; letter-spacing:.02em;
             display:flex; align-items:center; justify-content:center; gap:6px;
             transition:all .2s ease;
         }
@@ -393,12 +390,12 @@ HTML_TEMPLATE = """
         .metric-card.red .metric-label { color:rgba(239,68,68,.7); }
 
         .metric-num {
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:1.6rem; font-weight:700;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:1.6rem; font-weight:700;
             line-height:1; margin-bottom:5px;
         }
 
         .metric-label {
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.58rem; letter-spacing:.18em; text-transform:uppercase;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.58rem; letter-spacing:.18em; text-transform:uppercase;
         }
 
         /* ─── RESULTS PANEL ───────────────────────────── */
@@ -423,7 +420,7 @@ HTML_TEMPLATE = """
         }
 
         .status-chip {
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.68rem;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.68rem;
             padding:4px 12px; border-radius:999px;
             background:rgba(0,229,255,.08); color:var(--c); border:1px solid rgba(0,229,255,.2);
             transition:all .3s;
@@ -445,7 +442,7 @@ HTML_TEMPLATE = """
 
         thead th {
             padding:10px 18px; text-align:left;
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
             background:rgba(10,15,25,.92); backdrop-filter:blur(12px);
             position:sticky; top:0; z-index:5; white-space:nowrap;
             border-bottom:1px solid var(--border);
@@ -470,7 +467,7 @@ HTML_TEMPLATE = """
             padding:11px 18px; white-space:nowrap; font-size:.82rem;
         }
 
-        .row-num { font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; color:var(--muted); font-size:0.75rem; text-align:center; }
+        .row-num { font-family:"Cascadia Mono", monospace; color:var(--muted); font-size:0.75rem; text-align:center; }
         
         .copy-btn {
             display:inline-flex; align-items:center; justify-content:center;
@@ -481,9 +478,9 @@ HTML_TEMPLATE = """
         .copy-btn svg { width:13px; height:13px; }
 
         .target-cell { font-weight:600; color:#e2e8f0; }
-        .ip-cell { font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.72rem; color:var(--muted); }
-        .ping-ok { font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.78rem; color:#34d399; }
-        .ping-to { font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.78rem; color:#475569; }
+        .ip-cell { font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.72rem; color:var(--muted); }
+        .ping-ok { font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.78rem; color:#34d399; }
+        .ping-to { font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.78rem; color:#475569; }
         .check-ok { color:#34d399; font-size:.9rem; }
         .check-fail { color:#f87171; font-size:.9rem; }
         .td-center { text-align:center; }
@@ -492,7 +489,7 @@ HTML_TEMPLATE = """
         /* TCP/SNI combined cell */
         .checks-cell {
             display:flex; align-items:center; justify-content:center; gap:6px;
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.72rem;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.72rem;
         }
         .check-item { display:flex; align-items:center; gap:3px; }
         .check-sep { color:var(--border-hi); }
@@ -501,7 +498,7 @@ HTML_TEMPLATE = """
         .cdn-badge {
             display:inline-flex; align-items:center; gap:6px;
             padding:4px 10px; border-radius:8px;
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.65rem; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.65rem; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
             white-space:nowrap;
         }
         .cdn-icon { width:14px; height:14px; flex-shrink:0; }
@@ -522,7 +519,7 @@ HTML_TEMPLATE = """
         .verdict {
             display:inline-flex; align-items:center; gap:5px;
             padding:4px 10px; border-radius:8px;
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.65rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.65rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
         }
         .v-sni     { background:rgba(16,185,129,.12); color:#34d399; border:1px solid rgba(16,185,129,.25); }
         .v-cdn     { background:rgba(14,165,233,.12); color:#38bdf8; border:1px solid rgba(14,165,233,.25); }
@@ -542,7 +539,7 @@ HTML_TEMPLATE = """
             display:flex; align-items:center; justify-content:center;
         }
         .empty-text {
-            font-family:"AradWeb", "Segoe UI", "Trebuchet MS", "Arial", sans-serif; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase;
+            font-family:"Cascadia Mono", "Consolas", "Courier New", monospace; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase;
         }
     </style>
 </head>
@@ -911,8 +908,8 @@ async function runScan() {
                         ? `<span class="ping-ok">${Math.round(r.ping_ms)} ms</span>`
                         : `<span class="ping-to">T/O</span>`;
 
-                    const ok   = v => `<span class="check-ok">✓</span><span style="font-family:'AradWeb','Segoe UI','Trebuchet MS','Arial',sans-serif;font-size:.7rem;color:#94a3b8">${v}</span>`;
-                    const fail = v => `<span class="check-fail">✗</span><span style="font-family:'AradWeb','Segoe UI','Trebuchet MS','Arial',sans-serif;font-size:.7rem;color:#475569">${v}</span>`;
+                    const ok   = v => `<span class="check-ok">✓</span><span style="font-family:'Cascadia Mono','Consolas','Courier New',monospace;font-size:.7rem;color:#94a3b8">${v}</span>`;
+                    const fail = v => `<span class="check-fail">✗</span><span style="font-family:'Cascadia Mono','Consolas','Courier New',monospace;font-size:.7rem;color:#475569">${v}</span>`;
 
                     // Smart Live Sorting Score (Float calculation)
                     let baseScore = 0;
@@ -1321,7 +1318,6 @@ class SNIChecker:
             "status": "Stopped" if was_stopped else "Completed"
         }
 
-        # Send completion status
         yield json.dumps({"type": "done", "metadata": metadata, "all_results": rows}) + "\n"
 
 
